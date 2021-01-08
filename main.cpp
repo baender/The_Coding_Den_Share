@@ -10,7 +10,8 @@ char lineBuffer[255];
 SensorAnalog a("SensorA", 8, 1.4142);
 SensorAnalog b("Sensor321", 6, 3.1415);
 SensorCTD    c("CTD1", 'H');
-SensorInterface *sensors[] = {&a, &b, nullptr};
+SensorCTD    d("CTD2", 'Q');
+SensorInterface *sensors[] = {&a, &b, &c, &d, nullptr};
 
 
 void setup() {
